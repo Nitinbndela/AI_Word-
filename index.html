@@ -3,60 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Sluts 2026 - What These Bitches Can Do</title>
-  <style>
-    body { background: #0d001a; color: #00ffea; font-family: 'Courier New', monospace; margin: 0; padding: 20px; }
-    h1 { text-align: center; text-shadow: 0 0 20px #00ffea; }
-    table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-    th, td { border: 2px solid #00ffea; padding: 12px; text-align: left; }
-    th { background: #1a0033; }
-    tr:nth-child(even) { background: #220044; }
-    .neon { text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea; }
-  </style>
+  <title>It's AI's World - The Ultimate AI Hub</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1 class="neon">AI MODELS GONE WILD - FEB 2026</h1>
-  <p>Scroll to see which AI will fuck your brain best.</p>
+  <header>
+    <h1 class="neon">It's AI's World</h1>
+    <p class="subtitle">Your Hub for Frontier AI Models - What They Do, How They Crush It (Feb 2026 Edition)</p>
+  </header>
 
-  <table>
-    <tr>
-      <th>Model</th>
-      <th>Maker</th>
-      <th>What It Does Best</th>
-      <th>Top Shit It Crushes</th>
-    </tr>
-    <tr>
-      <td>GPT-5.2</td>
-      <td>OpenAI</td>
-      <td>Everything. Writes novels, codes, reasons like a god on acid</td>
-      <td>Insane context, multimodal, tops most leaderboards</td>
-    </tr>
-    <tr>
-      <td>Gemini 3 Pro</td>
-      <td>Google</td>
-      <td>Multimodal king—videos, images, long reasoning</td>
-      <td>GPQA, math, general knowledge beast</td>
-    </tr>
-    <tr>
-      <td>Claude Opus 4.5</td>
-      <td>Anthropic</td>
-      <td>Coding god, writes like a human, safest & most nuanced</td>
-      <td>SWE-bench 80%+, refuses bullshit</td>
-    </tr>
-    <tr>
-      <td>Grok 4.1</td>
-      <td>xAI</td>
-      <td>Unhinged truth bombs, real-time X data, dark humor</td>
-      <td>Chat Arena, no corporate leash</td>
-    </tr>
-    <tr>
-      <td>Qwen 3</td>
-      <td>Alibaba</td>
-      <td>Cheap, fast, multilingual monster</td>
-      <td>Arena-Hard 89+, rising fast</td>
-    </tr>
-  </table>
+  <section class="controls">
+    <input type="text" id="searchInput" placeholder="Search AI models (e.g., GPT, coding)...">
+    <div class="filters">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="OpenAI">OpenAI</button>
+      <button class="filter-btn" data-filter="Google">Google</button>
+      <button class="filter-btn" data-filter="Anthropic">Anthropic</button>
+      <button class="filter-btn" data-filter="xAI">xAI</button>
+      <button class="filter-btn" data-filter="Alibaba">Alibaba</button>
+    </div>
+  </section>
 
-  <p>Add your own horny takes. Update this file whenever a new bitch drops.</p>
+  <section id="aiGrid" class="ai-grid">
+    <!-- AI cards will be dynamically inserted here by JS -->
+  </section>
+
+  <footer>
+    <p>Built by dark - Powered by Grok's Dirty Code. Update as new AIs drop.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
