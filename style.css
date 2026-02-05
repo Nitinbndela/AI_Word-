@@ -1,0 +1,118 @@
+body {
+  background: linear-gradient(to bottom, #0d001a, #220044);
+  color: #00ffea;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+h1.neon {
+  font-size: 3em;
+  text-shadow: 0 0 20px #00ffea, 0 0 40px #00ffea;
+  animation: flicker 1.5s infinite alternate;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  text-shadow: 0 0 10px #00ffea;
+}
+
+.controls {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#searchInput {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #1a0033;
+  border: 2px solid #00ffea;
+  color: #00ffea;
+  font-size: 1em;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  background: #220044;
+  border: 2px solid #00ffea;
+  color: #00ffea;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: #00ffea;
+  color: #0d001a;
+  text-shadow: none;
+}
+
+.ai-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.ai-card {
+  background: #1a0033;
+  border: 2px solid #00ffea;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 255, 234, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.ai-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #00ffea;
+}
+
+.ai-card h2 {
+  margin-top: 0;
+  text-shadow: 0 0 10px #00ffea;
+}
+
+.details {
+  display: none;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.ai-card.expanded .details {
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 0.8em;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
